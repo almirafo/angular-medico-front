@@ -25,3 +25,37 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+criar projeto
+ng new medico --routing --skip-tests
+
+baixar dependencias
+
+npm i bootstrap jquery --save
+npm i angular-imask
+npm i currency-formatter --save
+npm install moment --save
+npm i toastr --save
+npm install primeng --save
+npm install primeicons --save
+npm install chart.js --save
+npm i angular-in-memory-web-api --save
+
+
+
+configura angular.json
+dentro de---> "architect": { 
+
+"styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/toastr/build/toastr.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/nova-light/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/chart.js/dist/Chart.bundle.js"
+            ],
